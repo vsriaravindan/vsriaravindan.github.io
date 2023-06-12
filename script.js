@@ -50,13 +50,6 @@ for (var i = 0; i < navLinks.length; i++) {
 document.querySelector(".fa-twitter").addEventListener("click", function () {
   window.open("https://twitter.com/SriAravindan3", "_blank");
 });
-//Instagram
-document.querySelector(".fa-instagram").addEventListener("click", function () {
-  window.open(
-    "https://github.com/vsriaravindan=%2F",
-    "_blank"
-  );
-});
 
 //Hire Me
 
