@@ -44,15 +44,13 @@ for (var i = 0; i < navLinks.length; i++) {
 }
 
 //Social Media
-//Facebook
-});
 //Twitter
 document.querySelector(".fa-twitter").addEventListener("click", function () {
   window.open("https://twitter.com/SriAravindan3", "_blank");
 });
 
-//Hire Me
 
+//Hire Me
 document.getElementById("compose-btn").addEventListener("click", function () {
   var email = "sriaravindan@proton.me";
   var subject = "Regarding Job Application";
@@ -88,36 +86,19 @@ document.getElementById("compose-btn").addEventListener("click", function () {
     window.open(composeUrl, "_blank");
   }
 });
+
 function isMobileDevice() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   );
 }
-//Hire me with media query
-// document.getElementById("gmail-btn").addEventListener("click", function () {
-//   var recipient = "sriaravindan@proton.me";
-//   var subject = "Regarding Job Application";
-//   var body = "";
-
-//   var mailtoUrl =
-//     "mailto:" +
-//     recipient +
-//     "?subject=" +
-//     encodeURIComponent(subject) +
-//     "&body=" +
-//     encodeURIComponent(body);
-
-//   window.location.href = mailtoUrl;
-// });
 
 //Download button
-
 document.getElementById("download-btn").addEventListener("click", function () {
   window.open("https://1drv.ms/b/s!Ao_et5i2deoqgZh2S5HePjapU240oQ?e=DRfiQV", "_blank");
 });
 
-//Lets chat
-
+//Let's Chat
 document.getElementById("whatsapp-btn").addEventListener("click", function () {
   var phoneNumber = "8610097064";
   var message = "Hello,";
