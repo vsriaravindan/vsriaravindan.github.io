@@ -12,6 +12,8 @@
 
     <title>Sri aravindan&dash;Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- BoxIcon CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Fontawesome CDN Link -->
     <link
       rel="stylesheet"
@@ -42,6 +44,7 @@
           <div class="cancel-btn">
             <i class="fas fa-times"></i>
           </div>
+
         </ul>
         <div class="media-icons">
           <a href="https://twitter.com/sriaravindanv"><i class="fab fa-twitter"></i></a>
@@ -55,6 +58,7 @@
 
     <!-- Home Section Start -->
     <section class="home" id="home">
+
       <div class="home-content">
         <div class="text">
           <div class="text-one">Hello,</div>
@@ -64,6 +68,7 @@
         </div>
         <div class="button">
           <button id="compose-btn" id="gmail-btn">Hire Me</button>
+	  <a href="https://blog.sriaravindan.me/"target="_blank" id="compose-btn" id="blog-btn">My Blogs</a>
         </div>
       </div>
     </section>
@@ -108,24 +113,29 @@
             <div class="topic">Skills Reflects Our Knowledge</div>
             <p>
               I am actively studying various tools, technologies, and methodologies related to this field. Some of the areas I am focusing on include cloud platforms like AWS, containerization with Docker, 
-		infrastructure as code using Terraform, and configuration management with tools like Ansible.
-
-
-            </p>
-            
+		infrastructure as code using Terraform, and configuration management with tools like Ansible.</p>
             <title>My Skills</title>
   <style>
     .skills {
       display: flex;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
     }
-
+.skill-progress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
     .skill {
       margin-right: 10px;
       margin-bottom: 10px;
       padding: 5px 10px;
       background-color: #f2f2f2;
       border-radius: 5px;
+      width: 100px;
     }
 
     .progress {
@@ -145,9 +155,11 @@
     }
   </style>
 </head>
+          </div>
 <body>
-  <h2>Skills</h2>
   <div class="skills">
+  <h2 style="margin-bottom: 10px;text-transform: uppercase; font-weight: 500">Skills</h2>
+    <div class="skill-progress">
     <div class="skill">
       <div class="skill-name">Linux</div>
       <div class="progress">
@@ -184,7 +196,7 @@
         <div class="progress-bar" style="width: 65%;">65%</div>
       </div>
     </div>
-  </div>
+  </div></div>
         </div>
       </div>
     </section>
@@ -195,9 +207,7 @@
         <div class="text">
           <div class="topic">Have Any Project?</div>
           <p>
-            Are you in need of professional web development services? Let's
-            discuss your project and create a stunning website tailored to your
-            specific requirements.
+            Contact me on whatsapp
           </p>
           <div class="button">
             <button id="whatsapp-btn">
