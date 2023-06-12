@@ -7,16 +7,41 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-
+:root{
+  --light : #ffffff;
+  --dark-1 : #0e2431;
+  --dark-2: #08293b;
+}
+.theme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  padding: 8px 5px 8px 10px;
+  border-radius: 50% 0 0 50%;
+  top: 100px;
+  right: 0;
+  background-color: #54a900;
+}
+.bxs-sun{
+  font-size: 18px;
+  color: var(--light);
+  cursor: pointer;
+}.bxs-moon{
+   font-size: 18px;
+   color: var(--light);
+   cursor: pointer;
+}
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
+  /*display: none;*/
 }
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: #69db7c;
+  background: #37da37;
   border-radius: 12px;
   transition: all 0.3s ease;
 }
@@ -160,6 +185,8 @@ nav.sticky .menu-btn {
 }
 .home .button {
   margin: 14px 0;
+  display: flex;
+  gap: 20px;
 }
 .home .button button {
   outline: none;
@@ -167,16 +194,34 @@ nav.sticky .menu-btn {
   border-radius: 6px;
   font-size: 25px;
   font-weight: 400;
-  background: #69db7c;
+  background: #37da37;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+.home .button a {
+  text-decoration : none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #37da37;
   color: #fff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
 }
 .home .button button:hover {
-  border-color: #bfd8bd;
+  border-color: #37da37;
   background-color: rgba(34, 34, 34, 0.6);
-  color: #bfd8bd;
+  color: #37da37;
+}
+.home .button a:hover {
+  border-color: #37da37;
+  background-color: rgba(34, 34, 34, 0.6);
+  color: #37da37;
 }
 
 /* About Section Styling */
@@ -187,13 +232,15 @@ section {
 }
 section .content {
   width: 80%;
-  margin: 40px auto;
+  margin:auto;
   font-family: "Poppins", sans-serif;
+  color: #0e2431;
 }
 .about .about-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 section .title {
   display: flex;
@@ -201,7 +248,6 @@ section .title {
   margin-bottom: 40px;
 }
 section .title span {
-  color: #0e2431;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -236,7 +282,6 @@ section .title span::after {
   width: 55%;
 }
 section .topic {
-  color: #0e2431;
   font-size: 25px;
   font-weight: 500;
   margin-bottom: 10px;
@@ -246,7 +291,6 @@ section .topic {
 }
 .about-details .right p {
   text-align: justify;
-  color: #0e2431;
 }
 section .button {
   margin: 16px 0;
@@ -257,14 +301,14 @@ section .button button {
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #69db7c;
+  background: #37da37;
   color: #fff;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
 }
 section .button button:hover {
-  border-color: #bfd8bd;
+  border-color: #37da37;
   background-color: #f0f8ff;
   color: #8ce99a;
 }
@@ -272,20 +316,20 @@ section .button button:hover {
 /* My Skills CSS */
 .skills {
   background: #f0f8ff;
+    color: #0e2431;
 }
 .skills .content {
   padding: 40px 0;
 }
 .skills .skills-details {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  /*align-items: center;*/
 }
 .skills-details .text {
-  width: 50%;
+  width: 100%;
 }
 .skills-details p {
-  color: #0e2431;
   text-align: justify;
 }
 .skills .skills-details .experience {
@@ -294,11 +338,9 @@ section .button button:hover {
   margin: 0 10px;
 }
 .skills-details .experience .num {
-  color: #0e2431;
   font-size: 80px;
 }
 .skills-details .experience .exp {
-  color: #0e2431;
   margin-left: 20px;
   font-size: 18px;
   font-weight: 500;
@@ -316,11 +358,11 @@ section .button button:hover {
 }
 .skills-details .boxes .topic {
   font-size: 20px;
-  color: #69db7c;
+  color: #37da37;
 }
 .skills-details .boxes .per {
   font-size: 60px;
-  color: #69db7c;
+  color: #37da37;
 }
 
 /* My Services CSS */
@@ -340,13 +382,13 @@ section .button button:hover {
   transition: all 0.4s ease;
 }
 .services .boxes .box:hover {
-  background: #bfd8bd;
+  background: #37da37;
   color: #fff;
 }
 .services .boxes .box .icon {
   height: 50px;
   width: 50px;
-  background: #69db7c;
+  background: #37da37;
   border-radius: 50%;
   text-align: center;
   line-height: 50px;
@@ -381,6 +423,7 @@ section .button button:hover {
 .contact .content {
   margin: 0 auto;
   padding: 30px 0;
+  color: #0e2431;
 }
 .contact .text {
   width: 80%;
@@ -390,7 +433,7 @@ section .button button:hover {
 
 /* Footer CSS */
 footer {
-  background: #bfd8bd;
+  background: #37da37;
   padding: 15px 0;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -413,10 +456,10 @@ footer .text span a:hover {
   bottom: 20px;
   right: 20px;
   color: #fff;
-  background: #69db7c;
-  padding: 7px 12px;
+  background: #185400;
+  padding: 9px 12px;
   font-size: 18px;
-  border-radius: 6px;
+  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
@@ -463,6 +506,10 @@ footer .text span a:hover {
 }
 
 @media (max-width: 750px) {
+    nav.sticky {
+    background: #464646;
+    padding: 30px 0;
+}
   nav .navbar {
     width: 90%;
   }
@@ -531,6 +578,10 @@ footer .text span a:hover {
 }
 
 @media (max-width: 500px) {
+  nav.sticky {
+    background: #464646;
+    padding: 30px 0;
+}
   .home .text-two {
     font-size: 55px;
   }
