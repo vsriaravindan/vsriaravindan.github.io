@@ -101,7 +101,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
 //Let's Chat
 document.getElementById("whatsapp-btn").addEventListener("click", function () {
   var phoneNumber = "8610097064";
-  var message = "Hello,";
+  var message = "Hello, ";
 
   var whatsappUrl =
     "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
