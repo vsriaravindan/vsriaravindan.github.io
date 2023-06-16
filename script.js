@@ -12,7 +12,6 @@ window.onscroll = function () {
     scrollBtn.style.display = "none";
   }
 };
-
 // Side NavIgation Menu JS Code
 let body = document.querySelector("body");
 let navBar = document.querySelector(".navbar");
@@ -42,14 +41,11 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
-
 //Social Media
 //Twitter
 document.querySelector(".fa-twitter").addEventListener("click", function () {
   window.open("https://twitter.com/SriAravindan3", "_blank");
 });
-
-
 //Hire Me
 document.getElementById("compose-btn").addEventListener("click", function () {
   var email = "sriaravindan@proton.me";
@@ -62,7 +58,6 @@ document.getElementById("compose-btn").addEventListener("click", function () {
       ? "Good Afternoon"
       : "Good Evening";
   var body = `Hi,${greeting} `;
-
   var composeUrl =
     "https://mail.google.com/mail/?view=cm&to=" +
     encodeURIComponent(email) +
@@ -92,19 +87,15 @@ function isMobileDevice() {
     navigator.userAgent
   );
 }
-
 //Download button
 document.getElementById("download-btn").addEventListener("click", function () {
   window.open("https://1drv.ms/b/s!Ao_et5i2deoqgZh2S5HePjapU240oQ?e=DRfiQV", "_blank");
 });
-
 //Let's Chat
 document.getElementById("whatsapp-btn").addEventListener("click", function () {
   var phoneNumber = "8610097064";
   var message = "Hello, ";
-
   var whatsappUrl =
     "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
-
   window.open(whatsappUrl);
 });
