@@ -89,7 +89,7 @@ function isMobileDevice() {
 }
 //Download button
 document.getElementById("download-btn").addEventListener("click", function () {
-  window.open("https://1drv.ms/b/s!Ao_et5i2deoqgZh2S5HePjapU240oQ?e=DRfiQV", "_blank");
+  window.open("https://1drv.ms/b/s!Ao_et5i2deoqgZ0vt_qe8iGMNLKjfg?e=CCDZbE", "_blank");
 });
 //Let's Chat
 document.getElementById("whatsapp-btn").addEventListener("click", function () {
